@@ -1,0 +1,27 @@
+body{
+  font-family: 'Lato','Roboto Mono','monospace',sans-serif;
+  color: var(--bs-secondary);
+}
+
+.fs-7{
+  font-size: 12px;
+}
+
+.fz14{
+  font-size: 14px;
+}
+
+.logo{
+  width: auto;
+  height: 40px ;
+}
+
+header{
+  .list-group-item{
+    transition: all 0.3s;
+    background-color: unset;
+    &:hover{
+      border-color:var(--bs-green) !important;
+    }
+  }
+} 

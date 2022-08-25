@@ -1,0 +1,54 @@
+.dropdown-toggle,.collapseBtn {
+  margin-left: 50px;
+  position: relative;
+  outline: none;
+  background-color: #fff;
+  border: 0;
+  &::after{
+    // display: inline-block;
+    // margin-left: 0.255em;
+    // vertical-align: 0.255em;
+    position: absolute;
+    top: 0;
+    transform: translateY(-25%);
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    font-family: 'Material Icons';
+    content: "\e5cf";
+    border:unset;
+    color: var(--bs-success);
+
+    // border-top: 0.3em solid;
+    // border-right: 0.3em solid transparent;
+    // border-bottom: 0;
+    // border-left: 0.3em solid transparent;
+  }
+}
+
+.mb-4px{
+  margin-bottom: 4px;
+}
+
+.ml-8px{
+  margin-left: 8px;
+}
+
+.image{
+  width: 40px;
+  height: 40px;
+}
+
+
+.collapseBtn{
+  margin: 0 0 6px 0;
+}
+
+main{
+  .list-group-item{
+
+  }
+  .list-group-item.active{
+    color:unset;
+  }
+}
