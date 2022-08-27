@@ -18,9 +18,19 @@
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet"
   >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap"
+    rel="stylesheet"
+  >
   <!-- <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -32,72 +42,116 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <header class="col-2 p-0 ">
-        <ul class="list-group bg-light flex-shrink-0 min-vh-100">
-          <li class="list-group-item py-5 border-0 ">
-            <h1><a class="ms-5 logo" href="/week5-bs"><img
-                src="./assets/images/logo-ANSWER.svg"
-                alt="logo-ANSWER.svg"
-              ></a></h1></li>
 
-          <li class="list-group-item mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a class="d-flex align-items-center ms-5" href="#"><span class="material-icons fs-4 me-3">
-            assessment
-            </span> Dashboard</a></li>
-          <li class="list-group-item mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a class="d-flex align-items-center ms-5" href="#"><span class="material-icons fs-4 me-3">
+    <div class="row mx-0">
+      <header class="col-2 p-0 bg-light p-0 d-flex flex-column justify-content-between pb-5">
+        <ul class="list-group  flex-shrink-0">
+          <li class="list-group-item py-5 border-0 ">
+            <h1 class="m-0"><a
+                class="ms-5 logo"
+                href="/week5-bs"
+              ><img
+                  src="./assets/images/logo-ANSWER.svg"
+                  alt="logo-ANSWER.svg"
+                ></a></h1>
+          </li>
+
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">
+                assessment
+              </span> Dashboard</a></li>
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">
                 question_answer
               </span> Question</a></li>
-          <li class="list-group-item mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a class="d-flex align-items-center ms-5" href="#"><span class="material-icons fs-4 me-3">
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">
                 assignment
               </span> Assignment</a></li>
-          <li class="list-group-item mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a class="d-flex align-items-center ms-5" href="#"><span class="material-icons fs-4 me-3">
-            video_library
-            </span> Course</a></li>
-          <li class="list-group-item mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a class="d-flex align-items-center ms-5" href="#"><span class="material-icons fs-4 me-3">
-            people
-            </span> Admin</a></li>
-          <li class="list-group-item mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a class="d-flex align-items-center ms-5" href="#"><span class="material-icons fs-4 me-3">settings</span>
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">
+                video_library
+              </span> Course</a></li>
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">
+                people
+              </span> Admin</a></li>
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">settings</span>
               Setting</a></li>
         </ul>
-
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0">
+            <img
+              class="image rounded-circle "
+              src="./assets/images/andychen.jpeg"
+              alt="andychen.jpeg"
+            >
+          </div>
+          <div class="ms-3">
+            <p class="fw-bold m-0 lh-1">Andy Chen</p>
+            <small class="fz14 text-gray600">andy0401@mail.com</small>
+          </div>
+        </div>
       </header>
       <main class="col-10 p-5">
         
-<div class="container">
-  <div class="d-flex align-items-center pb-5">
-    <h2 class="fs-4 fw-bold">Assignment</h2>
-    <div class="dropdown">
-      <button
-        class="dropdown-toggle fw-bold"
-        type="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        All Courses
-      </button>
-      <ul class="dropdown-menu">
-        <li><a
-            class="dropdown-item"
-            href="#"
-          >Action</a></li>
-        <li><a
-            class="dropdown-item"
-            href="#"
-          >Another action</a></li>
-        <li><a
-            class="dropdown-item"
-            href="#"
-          >Something else here</a></li>
-      </ul>
+<div class="container p-0">
+  <div class="d-flex justify-content-between pb-5">
+    <div class="d-flex align-items-center ">
+      <h2 class="fs-4 m-0 fw-bold">Assignment</h2>
+      <div class="dropdown">
+        <button
+          class="dropdown-toggle fw-bold"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          All Courses
+        </button>
+        <ul class="dropdown-menu">
+          <li><a
+              class="dropdown-item"
+              href="#"
+            >Action</a></li>
+          <li><a
+              class="dropdown-item"
+              href="#"
+            >Another action</a></li>
+          <li><a
+              class="dropdown-item"
+              href="#"
+            >Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <span class="material-icons me-4">
+        search
+      </span>
+      <span class="material-icons">
+        notifications_active
+      </span>
     </div>
   </div>
 </div>
 
 
-<div class="container">
+<div class="container p-0 mt-12px">
   <!-- <div class="d-flex flex-column"> -->
-  <section class="ml-3 ">
+  <section class="ml-3 mb-6px">
     <div class="position-relative d-flex justify-content-between">
       <button
         class="collapseBtn"
@@ -123,52 +177,52 @@
             class="list-group-item list-group-item-action active"
             aria-current="true"
           >
-            <div class="d-flex w-100 justify-content-between mb-4px">
-              <h5 class="fs-7 m-0">Chapter Assignment 2</h5>
-              <small class="fs-7">4 days ago</small>
+            <div class="d-flex w-100 justify-content-between ">
+              <h5 class="fs-7 m-0 lh-1">Chapter Assignment 2</h5>
+              <small class="fs-7 lh-1">4 days ago</small>
             </div>
-            <div class="d-flex w-100 justify-content-between">
-              <p class="fw-bold m-0">Please check this file…</p>
-              <small class="fs-7 text-gray600">Emily Wang</small>
-            </div>
-          </div>
-          <div
-            class="list-group-item list-group-item-action"
-            aria-current="true"
-          >
-            <div class="d-flex w-100 justify-content-between mb-4px">
-              <h5 class="fs-7 m-0">Chapter Assignment 1</h5>
-              <small class="fs-7">12 hrs ago</small>
-            </div>
-            <div class="d-flex w-100 justify-content-between">
-              <p class="fw-bold m-0">My Homework</p>
-              <small class="fs-7 text-gray600">David Xu</small>
+            <div class="d-flex w-100 justify-content-between align-items-center">
+              <p class="fw-bold m-0 lh-lg">Please check this file…</p>
+              <small class="fs-7 text-gray600 ">Emily Wang</small>
             </div>
           </div>
           <div
             class="list-group-item list-group-item-action"
             aria-current="true"
           >
-            <div class="d-flex w-100 justify-content-between mb-4px">
-              <h5 class="fs-7 m-0">Final Assignment</h5>
-              <small class="fs-7">18 hrs ago</small>
+            <div class="d-flex w-100 justify-content-between  align-items-center">
+              <h5 class="fs-7 m-0 lh-1">Chapter Assignment 1</h5>
+              <small class="fs-7 lh-1">12 hrs ago</small>
             </div>
-            <div class="d-flex w-100 justify-content-between">
-              <p class="fw-bold m-0">Have a problem with this…</p>
-              <small class="fs-7 text-gray600">Tony Wei</small>
+            <div class="d-flex w-100 justify-content-between align-items-center">
+              <p class="fw-bold m-0 lh-lg">My Homework</p>
+              <small class="fs-7 text-gray600 ">David Xu</small>
             </div>
           </div>
           <div
             class="list-group-item list-group-item-action"
             aria-current="true"
           >
-            <div class="d-flex w-100 justify-content-between mb-4px">
-              <h5 class="fs-7 m-0">Final Assignment</h5>
+            <div class="d-flex w-100 justify-content-between  align-items-center">
+              <h5 class="fs-7 m-0 lh-1">Final Assignment</h5>
+              <small class="fs-7 lh-1">18 hrs ago</small>
+            </div>
+            <div class="d-flex w-100 justify-content-between align-items-center">
+              <p class="fw-bold m-0 lh-lg">Have a problem with this…</p>
+              <small class="fs-7 text-gray600 ">Tony Wei</small>
+            </div>
+          </div>
+          <div
+            class="list-group-item list-group-item-action"
+            aria-current="true"
+          >
+            <div class="d-flex w-100 justify-content-between  align-items-center">
+              <h5 class="fs-7 m-0 lh-lg">Final Assignment</h5>
               <small class="fs-7">19 hrs ago</small>
             </div>
-            <div class="d-flex w-100 justify-content-between">
-              <p class="fw-bold m-0">Did I do it right?</p>
-              <small class="fs-7 text-gray600">Christina Lin</small>
+            <div class="d-flex w-100 justify-content-between align-items-center">
+              <p class="fw-bold m-0 ">Did I do it right?</p>
+              <small class="fs-7 text-gray600 lh-1">Christina Lin</small>
             </div>
           </div>
         </div>
@@ -177,14 +231,14 @@
     <div class="card card-body border-0 p-0 col-8 ">
       <div class="list-group ">
         <div
-          class="list-group-item list-group-item-action active d-flex justify-content-between"
+          class="list-group-item px-3 list-group-item-action active d-flex justify-content-between"
           aria-current="true"
         >
-          <div class="d-flex  flex-column mb-4px">
-            <h5 class="fs-7 m-0">Chapter Assignment 2 / HTML&CSS</h5>
-            <p class="fw-bold m-0">Please check this file for me, thanks!</p>
+          <div class="d-flex  flex-column justify-content-center">
+            <h5 class="fs-7 m-0 ">Chapter Assignment 2 / HTML&CSS</h5>
+            <p class="fw-bold m-0 lh-lg">Please check this file for me, thanks!</p>
           </div>
-          <div class="d-flex  justify-content-between align-items-center">
+          <div class="d-flex justify-content-between align-items-center">
             <a href="#"><span class="material-icons">more_vert</span>
             </a>
           </div>
@@ -210,7 +264,7 @@
                 image?</p>
               <a
                 href="#"
-                class="btn btn-light border-gtay400 mb-3"
+                class="d-inline-flex  btn btn-light border-gray400 mb-3"
                 download
               ><span class="material-icons fs-4"> attach_file</span><span class="ml-8px">HW-2-David.zip</span></a>
             </div>
@@ -247,21 +301,29 @@
     </div>
   </section>
 
-  <section>
-    <div>
-      <span class="material-icons fs-4">
-        navigate_before
-      </span>
-      <span class="material-icons fs-4">
-        navigate_next
-      </span>
+
+  <section class="row mx-0 mt-3">
+    <div class=" col-6 d-flex justify-content-end align-items-center px-0">
+      <a
+        href="#"
+        class="me-4"
+      ><span class="material-icons fs-4">
+          navigate_before
+        </span></a>
+      <a href="#"><span class="material-icons fs-4">
+          navigate_next
+        </span></a>
+    </div>
+    <div class="col-6 d-flex justify-content-end px-0">
+      <button class="btn btn-outline-success rounded-0 px-5 me-3">Mark as read</button>
+      <button class="btn btn-success rounded-0 px-5">Reply</button>
     </div>
   </section>
   <!-- </div> -->
 </div>
       </main>
     </div>
-  </div>
+
 
 
   <script src="./assets/js/vendors.js"></script>

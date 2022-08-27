@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>
+    Boostrap Index
+  </title>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap"
+    rel="stylesheet"
+  >
+  <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  /> -->
+  <link
+    rel="stylesheet"
+    href="./assets/style/all.css"
+  >
+</head>
+
+<body>
+
+    <div class="row mx-0">
+      <header class="col-2 p-0 bg-light p-0 d-flex flex-column justify-content-between pb-5">
+        <ul class="list-group  flex-shrink-0">
+          <li class="list-group-item py-5 border-0 ">
+            <h1 class="m-0"><a
+                class="ms-5 logo"
+                href="/week5-bs"
+              ><img
+                  src="./assets/images/logo-ANSWER.svg"
+                  alt="logo-ANSWER.svg"
+                ></a></h1>
+          </li>
+
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">
+                assessment
+              </span> Dashboard</a></li>
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">
+                question_answer
+              </span> Question</a></li>
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">
+                assignment
+              </span> Assignment</a></li>
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">
+                video_library
+              </span> Course</a></li>
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">
+                people
+              </span> Admin</a></li>
+          <li class="list-group-item p-0 fw-bold mb-4 border-4 border-top-0 border-end-0 border-bottom-0 border-white"><a
+              class="d-flex align-items-center ms-5"
+              href="#"
+            ><span class="material-icons fs-4 me-3">settings</span>
+              Setting</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0">
+            <img
+              class="image rounded-circle "
+              src="./assets/images/andychen.jpeg"
+              alt="andychen.jpeg"
+            >
+          </div>
+          <div class="ms-3">
+            <p class="fw-bold m-0 lh-1">Andy Chen</p>
+            <small class="fz14 text-gray600">andy0401@mail.com</small>
+          </div>
+        </div>
+      </header>
+      <main class="col-10 p-5">
+        
+<div
+  class="modal"
+  tabindex="-1"
+  data-bs-backdrop="static"
+  id="exampleModal"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-5">
+      <div class="modal-header border-0">
+        <h2 class="text-secondary fw-bold fs-4 m-0">New Admin</h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body text-secondary ">
+        <div class="border-bottom border-gray400 py-4">
+          <h3 class="fw-bold fs-5 m-0 mb-3">Account</h3>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label m-0">Name</label>
+            <input type="text" class="form-control border-secondary" id="exampleFormControlInput1" >
+          </div>
+          <div>
+            <label for="exampleFormControlTextarea1" class="form-label m-0">Email</label>
+            <input type="email" class="form-control border-secondary" id="exampleFormControlTextarea1" >
+          </div>
+        </div>
+        <div class="border-bottom border-gray400 py-4">
+          <h3 class="fw-bold fs-5 m-0 mb-3">Verification</h3>
+          <div class="d-inline-flex"><span class="material-icons text-danger me-2"> warning </span> <span class="fw-bold">Unverified</span></div>
+          <button type="button" class="btn btn-outline-success btn-lg w-100 mt-3 fw-bold border-gray400">Send Verification Mail</button>
+        </div>
+        <div class="border-bottom border-gray400 py-4">
+          <h3 class="fw-bold fs-5 m-0 mb-3">Access Level</h3>
+          <select class="form-select form-select-lg text-gray600 border-secondary" aria-label=".form-select-lg example">
+            <option selected>-Choose access level-</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class=" py-4">
+          <h3 class="fw-bold fs-5 m-0 mb-3">Lecture</h3>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="Lecture" id="check1">
+            <label class="form-check-label" for="check1">Lecture</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="Coupon" id="check2">
+            <label class="form-check-label" for="check2">Coupon</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="Message" id="check3">
+            <label class="form-check-label" for="check3">Message</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="Setting" id="check4">
+            <label class="form-check-label" for="check4">Setting</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" value="Task Menu" id="check6">
+            <label class="form-check-label" for="check6">Task Menu</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal-footer border-0">
+        <button
+          type="button"
+          class="btn btn-outline-success px-5 py-2"
+          data-bs-dismiss="modal"
+        >Cancel</button>
+        <button
+          type="button"
+          class="btn btn-success px-5 py-2"
+        >Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container p-0">
+  <div class="d-flex justify-content-between pb-5">
+    <div class="d-flex align-items-center ">
+      <h2 class="fs-4 m-0 fw-bold me-6">Admin</h2>
+      <button class="btn d-inline-flex fw-bold ">
+        <span class="material-icons me-1 text-success">add</span>
+        <span class="ms-1" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">Add New Admin</span></button>
+    </div>
+    <div>
+      <span class="material-icons me-4">
+        search
+      </span>
+      <span class="material-icons">
+        notifications_active
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="container p-0">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">
+          <div class="d-inline-flex align-items-center">
+            <span>ID</span>
+            <span class="material-icons text-success">
+              arrow_downward
+            </span>
+          </div>
+        </th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Verified</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <a href="javascript:void(0);">
+            <span
+              class="material-icons me-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              remove_red_eye
+            </span>
+          </a>
+          <a href="javascript:void(0);">
+            <span
+              class="material-icons"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              edit
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#2</th>
+        <td>Zaina Goldsmith</td>
+        <td>zaina.goldsmith@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <a href="#">
+            <span class="material-icons me-4">
+              remove_red_eye
+            </span>
+          </a>
+          <a href="#">
+            <span class="material-icons">
+              edit
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#3</th>
+        <td>Mahima Lopez</td>
+        <td>mahima.lopez@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <a href="#">
+            <span class="material-icons me-4">
+              remove_red_eye
+            </span>
+          </a>
+          <a href="#">
+            <span class="material-icons">
+              edit
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#4</th>
+        <td>Pharrell Murray</td>
+        <td>pharrell.murray@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <a href="#">
+            <span class="material-icons me-4">
+              remove_red_eye
+            </span>
+          </a>
+          <a href="#">
+            <span class="material-icons">
+              edit
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#5</th>
+        <td>Annika Mcbride</td>
+        <td>annika.mcbride@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <a href="#">
+            <span class="material-icons me-4">
+              remove_red_eye
+            </span>
+          </a>
+          <a href="#">
+            <span class="material-icons">
+              edit
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#6</th>
+        <td>Fatimah Clark</td>
+        <td>fatimah.clark@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <a href="#">
+            <span class="material-icons me-4">
+              remove_red_eye
+            </span>
+          </a>
+          <a href="#">
+            <span class="material-icons">
+              edit
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#7</th>
+        <td>Klaudia Rhodes</td>
+        <td>klaudia.rhodes@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <a href="#">
+            <span class="material-icons me-4">
+              remove_red_eye
+            </span>
+          </a>
+          <a href="#">
+            <span class="material-icons">
+              edit
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#8</th>
+        <td>Tillie Lucero</td>
+        <td>tillie.lucero@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <a href="#">
+            <span class="material-icons me-4">
+              remove_red_eye
+            </span>
+          </a>
+          <a href="#">
+            <span class="material-icons">
+              edit
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#9</th>
+        <td>Sabrina Stephenson</td>
+        <td>sabrina.stephenson@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <a href="#">
+            <span class="material-icons me-4">
+              remove_red_eye
+            </span>
+          </a>
+          <a href="#">
+            <span class="material-icons">
+              edit
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#10</th>
+        <td>Annie Smith</td>
+        <td>annie.smith@mail.com</td>
+        <td>Yes</td>
+        <td>
+          <a href="#">
+            <span class="material-icons me-4">
+              remove_red_eye
+            </span>
+          </a>
+          <a href="#">
+            <span class="material-icons">
+              edit
+            </span>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container p-0 clearfix">
+  <nav aria-label="Page navigation example ">
+    <ul class="pagination float-end  pagination-sm mb-0">
+      <li class="page-item">
+        <a
+          class="page-link"
+          href="#"
+          aria-label="Previous"
+        >
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a
+          class="page-link"
+          href="#"
+        >1</a></li>
+      <li class="page-item"><a
+          class="page-link"
+          href="#"
+        >2</a></li>
+      <li class="page-item"><a
+          class="page-link"
+          href="#"
+        >3</a></li>
+      <li class="page-item">
+        <a
+          class="page-link"
+          href="#"
+          aria-label="Next"
+        >
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+      </main>
+    </div>
+
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
