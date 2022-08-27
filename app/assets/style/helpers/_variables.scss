@@ -88,7 +88,7 @@ $theme-colors: (
   "light":      $gray-100,
   "dark":       $dark,
   "gray600":     $gray-600,
-  "gtay400":    $gray-400
+  "gray400":    $gray-400
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -257,6 +257,7 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 2,
+  6: $spacer * 3,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -529,7 +530,7 @@ $mark-bg:                     #fcf8e3 !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 // scss-docs-start table-variables
-$table-cell-padding-y:        .5rem !default;
+$table-cell-padding-y:        1rem !default;
 $table-cell-padding-x:        .5rem !default;
 $table-cell-padding-y-sm:     .25rem !default;
 $table-cell-padding-x-sm:     .25rem !default;
@@ -1043,8 +1044,8 @@ $dropdown-dark-header-color:        $gray-500 !default;
 // Pagination
 
 // scss-docs-start pagination-variables
-$pagination-padding-y:              .375rem !default;
-$pagination-padding-x:              .75rem !default;
+$pagination-padding-y:              4px !default;
+$pagination-padding-x:              4px !default;
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
@@ -1055,16 +1056,16 @@ $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
 $pagination-border-radius:          $border-radius !default;
 $pagination-margin-start:           -$pagination-border-width !default;
-$pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           $success !default;
 
 $pagination-focus-color:            $link-hover-color !default;
 $pagination-focus-bg:               $gray-200 !default;
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            $link-hover-color !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-color:            #ffffff !default;
+$pagination-hover-bg:               $success !default;
+$pagination-hover-border-color:     $success !default;
 
 $pagination-active-color:           $component-active-color !default;
 $pagination-active-bg:              $component-active-bg !default;
@@ -1314,8 +1315,8 @@ $list-group-border-color:           $gray-400 !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
-$list-group-item-padding-y:         $spacer * .5 !default;
-$list-group-item-padding-x:         $spacer !default;
+$list-group-item-padding-y:         $spacer * .75 !default;
+$list-group-item-padding-x:         $spacer * .75 !default;
 $list-group-item-bg-scale:          -80% !default;
 $list-group-item-color-scale:       40% !default;
 

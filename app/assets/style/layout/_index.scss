@@ -34,14 +34,23 @@
   margin-left: 8px;
 }
 
+.mt-12px{
+  margin-top: 12px;
+}
+
 .image{
   width: 40px;
   height: 40px;
+  object-fit:cover;
+}
+
+header .image{
+  margin-left: 32px;
 }
 
 
-.collapseBtn{
-  margin: 0 0 6px 0;
+.mb-6px{
+  margin-bottom: 6px;
 }
 
 main{
